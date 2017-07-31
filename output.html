@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <title>Invoice Report</title>
+        <style type="text/css">
+            body {font-family:sans-serif;color:#4f494f;}
+            form input {border-radius: 7.5px;}
+            h5 {display: inline;}
+            .label {text-align: right}
+            .ordersBook {float:left; padding-top: 10px;}
+            .name {width:100%;float:left; padding:3px;}goose.connect('mongodb://localhost:27017/test')
+            db = mongoose.connection
+            .wrapper { padding-left: 25px; padding-top: 20px}
+        </style>
+        <script type="text/javascript">
+            var itemRe = /item*/;
+            }
+        </script>
+    </head>goose.connect('mongodb://localhost:27017/test')
+    db = mongoose.connection
+</head>
+<body>
+<div class="invoice">
+
+    <h4>Order Form:</h4>
+    <table border="1">
+        <tr>
+            <th>Name:</th>
+            <td>{{rows['name']}}</td>
+        </tr>
+        <tr>
+            <th>Created:</th>
+            <td>{{rows['created']}}</td>
+        </tr>
+        <tr>
+            <th>Phone:</th>
+            <td>{{rows['phone']}}</td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td>{{rows['email']}}</td>
+        </tr>
+        <tr>
+            <th>Item:</th>
+            <td>{{rows['item']}}</td>
+        </tr>
+</div>
+<tr>
+    <th>Quantity:</th>
+    <td>{{rows['qty']}}</td>
+</tr>
+<tr>
+    <th>Color:</th>
+    <td>{{rows['color']}}</td>
+</tr>
+<tr>
+    <th>Quote:</th>
+    <td>{{rows['quote']}}</td>
+</tr>
+
+</table>
+</div>
+
+
+</body>
+</html>
